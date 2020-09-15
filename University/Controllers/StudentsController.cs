@@ -26,7 +26,7 @@ namespace University.Controllers
                          orderby d.Age
                            select d.Age;
             AgeList.AddRange(AgeQry.Distinct());
-            ViewBag.movieGenre = new SelectList(AgeList,"20");
+            ViewBag._Age = new SelectList(AgeList,"20");
 
             if (!String.IsNullOrEmpty(searchString))
             {
